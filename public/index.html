@@ -161,7 +161,7 @@
     const formData = new FormData(form);
 
     try {
-      const res = await fetch("http://localhost:5000/contact", {
+      const res = await fetch("https://mycontact-backend.onrender.com/contact", {
         method: "POST",
         body: formData,
       });
