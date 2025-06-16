@@ -152,7 +152,7 @@
         </div>
 
         <!-- script -->
-         <script>
+    <script>
   const form = document.getElementById("contactForm");
 
   form.addEventListener("submit", async function (e) {
@@ -161,14 +161,14 @@
     const formData = new FormData(form);
 
     try {
-      const res = await fetch("https://mycontact-backend.onrender.com/contact", {
+      const res = await fetch("https://amir-contact-api.onrender.com/contact", {
         method: "POST",
         body: formData,
       });
 
       if (res.ok) {
         alert("✅ Your message has been sent!");
-        window.location.href = "/"; // Redirect to home
+        window.location.href = "/";
       } else {
         alert("❌ Failed to send message. Try again.");
       }
@@ -177,7 +177,6 @@
     }
   });
 </script>
-
         <!-- <div class="home"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div> -->
         <!-- <div class="home"><a href="#"><i class="fa-solid fa-arrow-up"></i></a></div> -->
 
